@@ -1,4 +1,4 @@
-Employee Task Scheduling Using Degree Heuristic
+ Employee Task Scheduling Using Degree Heuristic
 This project simulates an employee task scheduling system where conflicts arise due to overlapping availabilities. The goal is to assign tasks to employees without conflicts using the Degree Heuristic for efficient task allocation.
 
 Features
