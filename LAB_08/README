@@ -1,1 +1,62 @@
+# Neural Network Classification for Iris and Wine Datasets
 
+This project demonstrates the use of neural networks for classifying the Iris and Wine datasets. We implement two neural network models and compare their performance: one with a single hidden layer and another with an additional hidden layer.
+
+## Overview
+
+We explore the effect of adding an additional hidden layer to a simple neural network model. The Iris dataset, which consists of 150 samples of iris flowers with 4 features, is used for classification into 3 species. Similarly, the Wine dataset contains 178 samples of wine with 13 features and is classified into 3 classes.
+
+The neural network models are built using Keras and TensorFlow, and both datasets are preprocessed, trained, and evaluated. Training history (loss and accuracy) for both models is visualized, and a confusion matrix is plotted for the Wine dataset.
+
+## Requirements
+
+To run this project, you'll need the following libraries:
+
+- Python 3.x
+- TensorFlow
+- Scikit-learn
+- Matplotlib
+- NumPy
+
+You can install the necessary libraries by running:
+
+```bash
+pip install tensorflow scikit-learn matplotlib numpy
+
+
+Datasets
+Iris Dataset: This dataset contains 150 samples from 3 species of iris flowers. Each sample has 4 features: sepal length, sepal width, petal length, and petal width.
+
+Wine Dataset: This dataset consists of 178 samples of wine, with 13 features like alcohol content, malic acid, etc. The task is to classify the wine into one of three classes.
+
+Steps
+Data Preprocessing:
+
+The Iris and Wine datasets are loaded and preprocessed by scaling the feature values using StandardScaler.
+The target labels are one-hot encoded using OneHotEncoder.
+Model Creation:
+
+Original Model: A neural network with a single hidden layer (8 units) and a softmax output layer for classification.
+Modified Model: An extension of the original model with an additional hidden layer (16 units).
+Training:
+
+Both models are trained using the Adam optimizer and categorical cross-entropy loss for 50 epochs.
+Evaluation:
+
+The models' performance is evaluated on the test set for both datasets. The test accuracy for each model is printed.
+Visualization:
+
+The training and validation loss, as well as accuracy, are plotted for both the Iris and Wine datasets.
+Confusion Matrix:
+
+A confusion matrix is generated and displayed for the Wine dataset to visualize classification performance across different wine classes.
+Results
+Iris Dataset: The modified model with an additional hidden layer showed a slight improvement in test accuracy compared to the original model.
+Wine Dataset: The Wine dataset model performed well, showing the effectiveness of a neural network with more features.
+Visualizations helped understand model convergence and classification performance across epochs.
+Files
+iris_and_wine_classification.py: The main script containing the neural network implementation, training, and evaluation for both datasets.
+Confusion matrix for the Wine dataset is plotted to analyze the classification results.
+Conclusion
+The addition of a hidden layer in the modified model provided a slight improvement in test accuracy on the Iris dataset.
+The model trained on the Wine dataset, which has more features, achieved good performance, demonstrating the capability of neural networks in multi-class classification tasks.
